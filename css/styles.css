@@ -1,0 +1,318 @@
+:root {
+    --textcolor : #303737; 
+    --akcentorange : #FF6B0A;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+    width: 1170px;
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+}
+
+.main-page {
+    background: linear-gradient(270deg, #A5DEFF 0%, #FCFEFF 100.88%);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    margin-top: 34px;
+    margin-bottom: 116px;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.logo-text {
+    margin-left: 16px;
+}
+
+.mainpage-row {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.hero-cont {
+    --margin-left:  95px;
+    margin-right: 150px;
+    --border: 2px solid red;
+    align-self: center;
+}
+
+.hero-title {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 77px;
+    color: var(--textcolor);
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.gus-greeting {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--textcolor);
+    margin-bottom: 16px;
+}
+
+.gus-start {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    color: var(--akcentorange);
+    margin-bottom: 46px;
+}
+
+.main-text {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--textcolor);
+    margin-bottom: 46px;
+    }
+
+.hero-click {
+    padding: 12px 24px;
+    background: var(--akcentorange);
+    border-radius: 8px;
+
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    cursor: pointer;
+
+    --margin-bottom: 140px;
+    }
+
+.maim-gus {
+     align-self: flex-end;
+}
+
+/* 2section gus-fuckt */
+.gus-fuckt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ukrlogo {
+    padding-top: 52px;
+}
+
+.gush3 {
+font-weight: 600;
+font-size: 48px;
+line-height: 100px;
+color: var(--textcolor);
+margin: 16px 0;
+}
+
+.main-text2 {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: var(--textcolor);
+    margin-bottom: 24px;
+    width: 875px;
+}
+
+.fuckt-row {
+    width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 26px;
+}
+
+.fuckt-item {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    }
+
+.fuckt-title {
+    padding-left: 46px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    color: var(--textcolor);
+    margin-top: 12px;
+    margin-bottom: 32px;
+}
+
+.main-text3 {
+    width: 280px;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--textcolor) ;
+    padding-left: 46px;
+}
+/* END2section gus-fuckt */
+
+/* перемога за нами */
+footer {
+    margin-bottom: 72px;
+}
+.viktory {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+    padding-top: 20px;
+    padding-bottom: 72px;
+    width: 1170px;
+    margin: 0 auto;
+    
+    background: linear-gradient(270deg, 
+    rgba(165, 222, 255, 0.46) 0%, 
+    rgba(165, 222, 255, 0) 100%);
+    border-radius: 16px;
+}
+
+/* END перемога за нами */
+
+/* input with shake */
+input:invalid {
+    animation: shake .3s;
+}
+
+@keyframes shake {
+    25% {transform: translateX(4px);}
+    50% {transform: translateX(-4px);}
+    75% {transform: translateX(4px);}
+}
+/* END input */
+
+
+/* modal windows */
+
+.modal-bgr {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background:rgb(59 58 72 / 50%) ;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    pointer-events: none ;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.modal-form-container {
+    background: #FFFFFF;
+    padding: 42px 100px;
+    position: relative;
+}
+.modal-form {     
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 16px;
+}
+
+.close-btn {
+    position: absolute;
+    right: 28px;
+    top: 28px;
+    font-size: 28px;
+    color: #303737;
+    cursor: pointer;
+    background: none;
+    
+}
+
+.mod4 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    margin: 32px 0 12px 0;
+    color: var(--textcolor);
+}
+.mod-p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--textcolor);
+}
+
+.mod-filf {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.mod-name {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--textcolor);
+    margin-bottom: 8px;
+}
+
+.mod-inp {
+height: 48px;
+box-sizing: border-box;
+border: 1px solid #005BBB;
+border-radius: 8px;
+font-family: inherit;
+font-size: 16px;
+font-weight: 400;
+color: #303737;
+padding: 4px 8px;
+}
+
+.mos-click {
+    background: var(--akcentorange);
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    cursor: pointer;
+    margin-top: 32px ;
+}
+
+
+.modal-fon {
+    background: #B0CBFF;
+    padding: 42px 100px;
+}
+.log-mod2 {
+    margin-top: 12px;
+}
+
+.modal-active {
+    opacity: 1;
+    pointer-events: all ;
+}
+
+
+.gus-anim {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    margin-bottom: auto;
+    margin-top: auto;
+    width: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
